@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 5%;
+    --foreground: 48 100% 88%;
+
+    --card: 222 35% 8%;
+    --card-foreground: 48 100% 88%;
+
+    --primary: 48 96% 55%;
+    --primary-foreground: 222 47% 5%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 48 100% 88%;
+
+    --accent: 271 91% 65%;
+    --accent-foreground: 222 47% 5%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 48 96% 55%;
+
+    --radius: 0.75rem;
+
+    --species-human: 200 80% 50%;
+    --species-droid: 160 70% 45%;
+    --species-wookiee: 30 60% 40%;
+    --species-default: 220 70% 50%;
+
+    --shadow-glow: 0 0 20px hsla(132, 86%, 41%, 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* background: var(--gradient-space); */
+    min-height: 100vh;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer utilities {
+  .glow-gold {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--gold) / 0.7);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

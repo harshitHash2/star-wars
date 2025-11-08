@@ -1,16 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+The only requirement is having Node.js & npm installed - 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps:
 
-## React Compiler
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone https://github.com/harshitHash2/star-wars.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Step 2: Navigate to the project directory.
+cd star-wars
 
-## Expanding the ESLint configuration
+# Step 3: Install the necessary dependencies.
+npm i
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Step 4: Start the development server
+npm run dev
+```
+
+**It Includes**
+- Theme is adjusted according to swapi UI (Yellow Shade in Dark Mode).
+- Character Card with random image and species wise color.
+- Character Details with all the mentioned details.
+- Responsiveness in all type of devices.
+- (Bonus) Separate Search Component with Name with custom hook.
+- (Bonus) Separate Filter Component by homeworld, film, or species with custom hook.
+- (Bonus) Combined Search and Filter functionality 
+- (Bonus) Mock Authentication with silent token refresh logic.
+- (Bonus) Test Integration
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite + React
+- JavaScript
+- Tailwind CSS
