@@ -14,8 +14,7 @@ const FilterCard = ({ filters, onFilterChange }) => {
   return (
     <div className="w-full max-w-6xl bg-card border border-border rounded-xl p-6 card-shadow animate-fade-in">
       <div className="flex flex-wrap gap-4 items-end">
-        
-        {/* Homeworld Filter */}
+ 
         <div className="flex-1 min-w-[200px]">
           <label className="block text-sm font-medium text-foreground mb-2">Homeworld</label>
           <select
@@ -32,7 +31,6 @@ const FilterCard = ({ filters, onFilterChange }) => {
           </select>
         </div>
 
-        {/* Film Filter */}
         <div className="flex-1 min-w-[200px]">
           <label className="block text-sm font-medium text-foreground mb-2">Film</label>
           <select
@@ -49,7 +47,7 @@ const FilterCard = ({ filters, onFilterChange }) => {
           </select>
         </div>
 
-        {/* Species Filter */}
+   
         <div className="flex-1 min-w-[200px]">
           <label className="block text-sm font-medium text-foreground mb-2">Species</label>
           <select
@@ -66,7 +64,7 @@ const FilterCard = ({ filters, onFilterChange }) => {
           </select>
         </div>
 
-        {/* Clear Filters */}
+      
         <button
           onClick={clearFilters}
           className="px-6 py-2 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors"
